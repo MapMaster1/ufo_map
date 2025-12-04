@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <!--Заголовок-->
+	 <title> Уральский федеральный округ</title>
+	 <!--Подключаем Leaflet-->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.0/dist/leaflet.css"/>
+	 <script src="https://unpkg.com/leaflet@1.9.0/dist/leaflet.js"></script>
+	 
+	 <!--Подключаем плагин leaflet-choropleth-->
+	 <script src="https://unpkg.com/leaflet-choropleth/dist/choropleth.js"></script>
+	 
+	  <!--Подключаем плагин leaflet-groupedlayercontrol-->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.css" />
+	 <script src="https://unpkg.com/leaflet-groupedlayercontrol/dist/leaflet.groupedlayercontrol.min.js"></script>
+	 
+	 <!--Подключаем библиотеку Font Awesome версия 4.7.0-->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	 
+	 <!--Подключаем плагин Leaflet.fullscreen-->
+	 <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet" />
+	 <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+	 
+	 <!--Подключение плагина Leaflet.EasyButton-->
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+	 <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+	 
+	 <!-- Подключаем плагин leaflet-search -->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+	 <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+
+	 <!-- Подключаем файл CSS со стилями -->
+	  <link rel="stylesheet" href="style.css">
+   </head>
+   
+   <body>
+	  
+	  <!--Верхняя часть страницы сайта (Шапка)-->
+	  <div id = "header">
+		<!--Заголовок 1-го уровня-->
+		<h1>Карта Уральского федерального округа</h1>
+	  </div>
+	  
+	  <!--Блок содержания сайта-->
+	  <div id = "main-container">
+	  
+		<!--Блок с картой-->
+		<div id = "map-container">
+			<!--Сама карта-->
+			<div id = "map"></div>
+		</div>
+		
+		<!--Блок текста-->
+		<div id = "text-container">
+			<!--Заголовок 2-го уровня-->
+			<h2>Уральский федеральный округ</h2>
+			<!--Абзац-->
+			<p>
+				Уральский федеральный округ (УФО) — один из восьми федеральных округов Российской Федерации.
+				Находится в пределах Урала и Западной Сибири. Образован указом президента РФ от 13 мая 2000 года.
+				Административный центр — город Екатеринбург.
+			</p>
+			
+			<h2>Основные характеристики</h2>
+			<p>
+				Территория округа составляет 10,62 % от территории России (1 818 497 км²). Является наименьшим среди федеральных округов по количеству субъектов (их всего 6).
+				Расположен на территории Западно-Сибирской равнины с восточной части Уральских гор. Имеет выход к Карскому морю.
+				Высшая точка — 1895 метров (г. Народная).
+			</p>
+			<p>
+				Внешних границ не имеет.
+				Внутренние границы: на западе с Северо-Западным и Приволжским, на востоке с Сибирским.
+			</p>
+		</div>
+	  
+	  </div>
+	  
+	  <!--Нижняя часть страницы (Подвал)-->
+	  <div id = "footer">
+		Карта подготовлена студентом М. А. Шараховым
+		МИИГАиК, 2025
+	  </div>
+	  
+	  
+	  <!--Подключение скриптов Leaflet-->
+	  <script src="script.js"></script>
+	  
+   </body>
+</html>
